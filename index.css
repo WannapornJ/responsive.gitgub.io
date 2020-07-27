@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: poppins;
+    color: lavender;
+    background-image: linear-gradient(to top right, #0E2352, #0E5187, #208294, #4EC1B1, #94E5AB);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    font-family: poppins;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.dark-mode {
+    color: black;
+    background-image: linear-gradient(to bottom left, #0E2352, #0E5187, #208294, #4EC1B1, #94E5AB);
+}
+
+.container {
+    background-position: center;
+    background-size: cover;
+}
+
+.pic-container {
+    background-image: url('200604_0776.jpg');
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+}
+
+.left-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.right-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 30px 0 30px 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.description-container, .contact-container, .experience-container, .skill-container, .educate-container, .interest-container, .full-name {
+    width: 80%;
+}
+
+.description {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 520px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pic-container {
+        width: 100%;
+    }
+    .name {
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .surname {
+        font-size: 50px;
+        font-weight: 300;
+    }
+    .header {
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .head-topic {
+        font-size: 30px;
+    }
+    .content-topic {
+        font-size: 16px;
+    }
+    .right-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 520px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 45px;
+    }
+    .pic-container {
+        width: 80%;
+    }
+    .name {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .surname {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .header {
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    .head-topic {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .content-topic {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .container {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr 2fr;
+    }
+    .pic-container {
+        width: 75%;
+    }
+    .name {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .surname {
+        font-size: 42px;
+        font-weight: 300;
+    }
+    .header {
+        font-size: 35px;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    .head-topic {
+        font-size: 22px;
+    }
+    .content-topic {
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: poppins;
+    src: url('Poppins/Poppins-Black.ttf'), url('Poppins/Poppins-BlackItalic.ttf'), url('Poppins/Poppins-Bold.ttf'), url('Poppins/Poppins-BoldItalic.ttf'), url('Poppins/Poppins-ExtraBold.ttf'), url('Poppins/Poppins-ExtraBoldItalic.ttf'), url('Poppins/Poppins-ExtraLight.ttf'), url('Poppins/Poppins-ExtraLightItalic.ttf'), url('Poppins/Poppins-Italic.ttf'), url('Poppins/Poppins-Light.ttf'), url('Poppins/Poppins-LightItalic.ttf'), url('Poppins/Poppins-Medium.ttf'), url('Poppins/Poppins-MediumItalic.ttf'), url('Poppins/Poppins-Regular.ttf'), url('Poppins/Poppins-SemiBold.ttf'), url('Poppins/Poppins-SemiBoldItalic.ttf'), url('Poppins/Poppins-Thin.ttf'), url('Poppins/Poppins-ThinItalic.ttf'),
+}
